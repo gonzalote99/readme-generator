@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/images/Logo.png">
+ 
+  <link rel="stylesheet" href="styles.css"/>
+  <title>readme generator</title>
+</head>
+<body>
+  <header>
+    <div class="controller-layer">
+      <div class="logo-section">
+         <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/images/Logo.png" alt="redame">
+      </div>
+      <div class="action-section d-flex gap-3">
+        <a href="https://github.com/gonzalote99/">
+           <button class="pulse">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="oction oction-star d-inline-block mr-2">
+               <path fill-rule='evenodd' d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+
+            </svg>
+            <span>star</span>
+           </button>
+        </a>
+        <a href="https://github.com/gonzalote99/">
+         <button class="pulse">
+         <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" data-view-component="true" class="oction oction-repo-forked mr-2">
+         <path fill-rule='evenodd' d='M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z'></path>
+         </svg>
+         <span>fork</span>
+         </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <h3 class="text-center my-3 mt-5">repository header</h3>
+   <section id="header" class="container mb-5">
+      <div class="row">
+         <div class="col-12 col-md-6 custom-input mb-4">
+         <label for="logo-path"><i class="fa fa-link"></i></label>
+         <input type="text" id="logo-path" placeholder="logo.png" />
+         </div>
+         <div class="col-12 col-md-6 custom-input mb-4">
+          <label for="title"><i class="fas fa-heading"></i></label>
+          <input type="text" id="title" placeholder="title" />
+          </div>
+          <div class="col-12 custom-input d-flex align-items-start gap-2 justify-content-center">
+            <label for="description"><i class="fa fa-file"></i></label>
+            <textarea id="description" placeholder="description" ></textarea>
+            </div>
+      </div> 
+   </section>
+
+   <h3 class="text-center my-3 mt-5">select technologies</h3>
+   <section id="technologies" class="container mb-5">
+     <h5 class="mb-3">programing languages</h5>
+     <div onclick="selectSkill(this)" class="tech-item">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/Angular.svg" alt="">
+      <span></span>
+     </div>
+     <div onclick="selectSkill(this)" class="tech-item">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/CSS.svg" alt="">
+      <span></span>
+     </div>
+     <div onclick="selectSkill(this)" class="tech-item">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/HTML.svg" alt="">
+      <span></span>
+     </div>
+     <div onclick="selectSkill(this)" class="tech-item">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/React.js.svg" alt="">
+      <span></span>
+     </div>
+     <div onclick="selectSkill(this)" class="tech-item">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/Vue.js.svg" alt="">
+      <span></span>
+     </div>
+     <div onclick="selectSkill(this)" class="tech-item">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/Ember.js.svg" alt="">
+      <span></span>
+     </div>
+   </section>
+   <div class="container d-flex align-items-center justify-content-between my-3 mt-5 ">
+    <button type="button" class="btn btn-outline-dark pulse" id="update-preview" >
+      <i class="fas fa-sync"></i>
+      <span>preview</span>
+    </button>
+    <h3>preview</h3>
+    <button type="button" class="btn btn-outline-dark pulse" id="copy-preview">
+      <i class="far fa-copy"></i>
+      <span>copy code</span>
+    </button>
+   </div>
+   <section id="preview" class="container mb-5 py-5">
+   <div align="center">
+     <a href="#">
+      <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/images/Logo.png" alt="" width="80" height="80">
+     </a>
+     <h1>github readme generator</h1>
+   </div>
+   
+   <br>
+   <br>
+   <div align="center">
+     <h2>technologies used in this repository:</h2>
+     <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/JavaScript.svg" width="40">
+     <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/Bootstrap.svg" width="40">
+     <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/CSS.svg" width="40">
+     <img src="https://raw.githubusercontent.com/afsharsharifi/GithubReadmeGenerator/master/icons/HTML.svg" width="40">
+   </div>
+   </section>
+   <script src="https://kit.fontawesome.com/7f6e784332.js" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+   
+</body>
+</html>
